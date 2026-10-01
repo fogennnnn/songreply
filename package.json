@@ -1,0 +1,14 @@
+{
+  "name": "songreply",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lyric-reply engine: prompt any sentence, get back a matching couplet from famous public-domain songs.",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "demo": "node src/serve.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

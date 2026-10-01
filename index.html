@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Songreply — answer in lyrics</title>
+<style>
+  :root{color-scheme:light}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#f4f1ea;color:#1c2027;line-height:1.55}
+  .wrap{max-width:680px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,5vw,40px);margin:0}
+  h1 em{font-style:normal;color:#8a6d2b}
+  .tag{color:#4a5160;margin:4px 0 20px}
+  .row{display:flex;gap:10px}
+  input[type=text]{flex:1;font:inherit;padding:12px 14px;border:1px solid #d9d1bf;border-radius:10px;background:#fff}
+  button{font:inherit;font-weight:700;border-radius:10px;padding:12px 20px;cursor:pointer;border:none;
+    background:#1c2027;color:#f3efe4}
+  button.ghost{background:transparent;color:#1c2027;border:2px solid #1c2027}
+  .card{background:#fffdf7;border:1px solid #d9d1bf;border-radius:14px;padding:22px;margin-top:20px;
+    box-shadow:0 12px 30px rgba(28,32,39,.08);display:none}
+  .card.show{display:block}
+  .lyric{font-family:Georgia,"Times New Roman",serif;font-size:clamp(19px,3vw,24px);line-height:1.5;margin:0 0 12px}
+  .src{font-size:13px;color:#4a5160;margin:0 0 4px}
+  .match{font-size:12px;color:#4a5160;font-family:ui-monospace,Menlo,Consolas,monospace;margin:0 0 14px}
+  .copyrow{display:flex;gap:10px;align-items:center}
+  .copied{font-size:13px;color:#1e6f43;visibility:hidden}
+  .copied.show{visibility:visible}
+  footer{margin-top:28px;font-size:12.5px;color:#4a5160}
+  @media(max-width:640px){.row{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Song<em>reply</em></h1>
+  <p class="tag">Type any sentence. Get back a reply made of famous old song lyrics — ready to copy and paste.</p>
+  <div class="row">
+    <input id="prompt" type="text" placeholder="e.g. I miss home and the long road back" autocomplete="off">
+    <button id="go">Reply</button>
+  </div>
+  <div class="card" id="card">
+    <p class="lyric" id="lyric"></p>
+    <p class="src" id="src"></p>
+    <p class="match" id="match"></p>
+    <div class="copyrow">
+      <button class="ghost" id="copy">Copy reply</button>
+      <span class="copied" id="copied">Copied.</span>
+    </div>
+  </div>
+  <footer id="foot"></footer>
+</div>
+<script type="module" src="/src/app.js"></script>
+</body>
+</html>
