@@ -1,0 +1,66 @@
+[
+  {
+    "name": "cowboy-1910",
+    "url": "https://www.gutenberg.org/cache/epub/21300/pg21300.txt",
+    "kind": "folk/cowboy",
+    "file": "cowboy-1910.txt",
+    "bytes": 338904,
+    "ok": true
+  },
+  {
+    "name": "shanties-1921",
+    "url": "https://www.gutenberg.org/cache/epub/20774/pg20774.txt",
+    "kind": "sea shanties",
+    "file": "shanties-1921.txt",
+    "bytes": 109523,
+    "ok": true
+  },
+  {
+    "name": "spirituals-1867",
+    "url": "https://archive.org/stream/slavesongsofunit00alle/slavesongsofunit00alle_djvu.txt",
+    "kind": "spirituals",
+    "file": "spirituals-1867.txt",
+    "bytes": 362456,
+    "ok": true
+  },
+  {
+    "name": "ballads-1723",
+    "url": "https://www.gutenberg.org/cache/epub/11236/pg11236.txt",
+    "kind": "ballads",
+    "file": "ballads-1723.txt",
+    "bytes": 74189,
+    "ok": true
+  },
+  {
+    "name": "child-vol1",
+    "url": "https://www.gutenberg.org/cache/epub/37031/pg37031.txt",
+    "kind": "child ballads",
+    "file": "child-vol1.txt",
+    "bytes": 406430,
+    "ok": true
+  },
+  {
+    "name": "carols-1871",
+    "url": "https://archive.org/stream/carolsn00bram/carolsn00bram_djvu.txt",
+    "kind": "carols",
+    "file": "carols-1871.txt",
+    "bytes": 344904,
+    "ok": true
+  },
+  {
+    "name": "nursery-19c",
+    "url": "https://www.gutenberg.org/cache/epub/39784/pg39784.txt",
+    "kind": "nursery rhymes",
+    "file": "nursery-19c.txt",
+    "bytes": 143122,
+    "ok": true
+  },
+  {
+    "name": "hymns-openhymnal",
+    "url": "http://openhymnal.org/alllyrics.html",
+    "kind": "hymns",
+    "file": "hymns-openhymnal.html",
+    "bytes": 556249,
+    "ok": true
+  }
+]

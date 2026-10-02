@@ -30,7 +30,8 @@ async function load() {
     MODEL = await res.json();
     document.getElementById("foot").textContent =
       `Retrieval over ${MODEL.meta.lines} lyric lines from ${MODEL.meta.songs} public-domain songs. ` +
-      `No generation, no network after load - the reply always exists verbatim in the songs.`;
+      `No generation, no network after load - the reply always exists verbatim in the songs. ` +
+      `Choruses and familiar songs rank higher.`;
   } catch (e) {
     document.getElementById("foot").textContent = "The model could not load. Serve this folder over http (npm run demo) and refresh.";
   }
